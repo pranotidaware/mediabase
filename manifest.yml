@@ -3,6 +3,6 @@ applications:
 - name: moviefun
   path: build/libs/moviefun-1.0-SNAPSHOT.war
   routes:
-  - route: <initials>-moviefun.apps.pcf.paltraining.perficient.com
+  - route: PD-moviefun.apps.pcf.paltraining.perficient.com
   services:
   - media-database
