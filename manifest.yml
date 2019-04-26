@@ -1,7 +1,7 @@
 ---
 applications:
 - name: moviefun
-  path: build/libs/moviefun-1.0-SNAPSHOT.war
+  path: applications/moviefun/build/libs/moviefun-1.0-SNAPSHOT.war
   routes:
   - route: PD-moviefun.apps.pcf.paltraining.perficient.com
   services:
