@@ -4,8 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.superbiz.moviefun.movies.Movie;
 import org.superbiz.moviefun.movies.MoviesBean;
-import org.superbiz.moviefun.podcasts.Podcast;
 import org.superbiz.moviefun.podcasts.PodcastRepository;
+import org.superbiz.moviefun.podcasts.Podcast;
 
 import java.util.Map;
 
@@ -35,7 +35,7 @@ public class RootController {
         moviesBean.addMovie(new Movie("Zoolander", "Ben Stiller", "Comedy", 6, 2001));
         moviesBean.addMovie(new Movie("Shanghai Noon", "Tom Dey", "Comedy", 7, 2000));
 
-        model.put("movies", moviesBean.getMovies());
+        model.put("podcasts", moviesBean.getMovies());
 
         podcastRepository.save(new Podcast("Wait Wait...Don't Tell Me!",
                 "NPR's weekly current events quiz.",

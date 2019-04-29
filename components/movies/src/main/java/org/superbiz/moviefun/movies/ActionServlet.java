@@ -129,7 +129,7 @@ public class ActionServlet extends HttpServlet {
             request.setAttribute("end", end);
             request.setAttribute("page", page);
             request.setAttribute("pageCount", pageCount);
-            request.setAttribute("movies", range);
+            request.setAttribute("podcasts", range);
             request.setAttribute("key", key);
             request.setAttribute("field", field);
         }
