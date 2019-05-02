@@ -16,6 +16,5 @@ applications:
     path: applications/moviefun/build/libs/moviefun-1.0-SNAPSHOT.war
     routes:
       - route: PD-moviefun.apps.pcf.paltraining.perficient.com
-    env:
-      MOVIES_MS_URL: http://PD-movies-ms.apps.pcf.paltraining.perficient.com/movies
-      PODCASTS_MS_URL: http://PD-podcasts-ms.apps.pcf.paltraining.perficient.com/podcasts
+    services:
+      - moviefun-database
