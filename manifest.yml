@@ -6,15 +6,17 @@ applications:
       - route: PD-movies-ms.apps.pcf.paltraining.perficient.com
     services:
       - movies-ms-database
+      - service-registry
   - name: podcasts-ms
     path: applications/podcasts-ms/build/libs/podcasts-ms-1.0-SNAPSHOT.jar
     routes:
       - route: PD-podcasts-ms.apps.pcf.paltraining.perficient.com
     services:
       - podcasts-ms-database
+      - service-registry
   - name: moviefun
     path: applications/moviefun/build/libs/moviefun-1.0-SNAPSHOT.war
     routes:
       - route: PD-moviefun.apps.pcf.paltraining.perficient.com
     services:
-      - moviefun-database
+      - service-registry
