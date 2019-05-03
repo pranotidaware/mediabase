@@ -29,12 +29,6 @@ public class Application {
     }
 
     @Bean
-    @LoadBalanced
-    public RestOperations restOperations() {
-        return new RestTemplate();
-    }
-
-    @Bean
     public MovieClient movieClient(RestOperations restOperations) {
         //return new MovieClient(moviesURL, restOperations);
         return new MovieClient("//movies-ms/movies", restOperations);
