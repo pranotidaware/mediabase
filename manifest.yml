@@ -4,8 +4,6 @@ applications:
     routes:
       - route: PD-movies-ms.apps.pcf.paltraining.perficient.com
     services:
-      - movies-ms-database
-      - service-registry
       - mediabase-sso
     env:
       GRANT_TYPE: client_credentials
@@ -14,8 +12,6 @@ applications:
     routes:
       - route: PD-podcasts-ms.apps.pcf.paltraining.perficient.com
     services:
-      - podcasts-ms-database
-      - service-registry
       - mediabase-sso
     env:
       GRANT_TYPE: client_credentials
@@ -24,6 +20,4 @@ applications:
     routes:
       - route: PD-moviefun.apps.pcf.paltraining.perficient.com
     services:
-      - service-registry
-      - circuit-breaker
       - mediabase-sso
