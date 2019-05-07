@@ -16,8 +16,9 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 import org.springframework.web.client.RestOperations;
 import org.springframework.web.client.RestTemplate;
 
-@EnableOAuth2Sso
+
 @Configuration
+@EnableOAuth2Sso
 @ConditionalOnProperty(value = "enable-oauth", matchIfMissing = true)
 @Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
 public class EnableSecurityConfiguration extends WebSecurityConfigurerAdapter {
