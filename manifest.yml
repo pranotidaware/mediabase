@@ -9,7 +9,6 @@ applications:
       - mediabase-sso
     env:
       GRANT_TYPE: client_credentials
-      redirect_uri : https://sso.login.sys.pcf.paltraining.perficient.com
   - name: podcasts-ms
     path: applications/podcasts-ms/build/libs/podcasts-ms-1.0-SNAPSHOT.jar
     routes:
@@ -20,7 +19,6 @@ applications:
       - mediabase-sso
     env:
       GRANT_TYPE: client_credentials
-      redirect_uri : https://sso.login.sys.pcf.paltraining.perficient.com
   - name: moviefun
     path: applications/moviefun/build/libs/moviefun-1.0-SNAPSHOT.war
     routes:

@@ -1,20 +1,24 @@
 package org.superbiz.moviefun;
 
-import org.springframework.beans.factory.annotation.Value;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 import org.springframework.web.client.RestOperations;
-import org.springframework.web.client.RestTemplate;
+
 import org.superbiz.moviefun.moviesui.ActionServlet;
 import org.superbiz.moviefun.moviesui.MovieClient;
 import org.superbiz.moviefun.podcastsui.PodcastClient;
 
 @SpringBootApplication
+@EnableAuthorizationServer
+@EnableResourceServer
 @EnableEurekaClient
 @EnableCircuitBreaker
 public class Application {
